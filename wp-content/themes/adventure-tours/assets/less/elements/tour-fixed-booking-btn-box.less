@@ -1,0 +1,35 @@
+@__box_bg_color:fade(@footer-bg, 80%);
+// @__box_bg_color:fade(@forms__button-bg, 80%);
+// @__btn_bg_color:@main-color2;
+
+.tour-fixed-booking-btn-box{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	text-align:center;
+	background:@__box_bg_color;
+	padding:20px;
+	z-index:100;
+	display:none;
+
+	&__btn{
+		// background:@__btn_bg_color;
+		// color:@main-color-white;
+		// text-transform:uppercase;
+
+		border-radius:5px;
+		border:2px solid @body-bg;
+
+		&:hover{
+			border:2px solid @body-bg;
+			// background:@__btn_bg_color;
+		}
+	}
+}
+
+@media(max-width:991px){
+	.tour-booking-form-is-scrolled-out .tour-fixed-booking-btn-box{
+		display:block;
+	}
+}

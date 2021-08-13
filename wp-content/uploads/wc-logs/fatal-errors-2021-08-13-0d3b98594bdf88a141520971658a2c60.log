@@ -1,0 +1,34 @@
+2021-08-13T04:40:53+00:00 CRITICAL Uncaught Error: Attempt to modify property "response" on null in C:\xampp\htdocs\staging\wp-content\plugins\js_composer\include\classes\updaters\class-vc-updating-manager.php:100
+Stack trace:
+#0 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(305): Vc_Updating_Manager->check_update(NULL)
+#1 C:\xampp\htdocs\staging\wp-includes\plugin.php(189): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\staging\wp-includes\option.php(1977): apply_filters('pre_set_site_tr...', Object(stdClass), 'update_plugins')
+#3 C:\xampp\htdocs\staging\wp-includes\update.php(357): set_site_transient('update_plugins', Object(stdClass))
+#4 C:\xampp\htdocs\staging\wp-admin\includes\class-wp-automatic-updater.php(464): wp_update_plugins()
+#5 C:\xampp\htdocs\staging\wp-includes\update.php(729): WP_Automatic_Updater->run()
+#6 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(303): wp_maybe_auto_update('')
+#7 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#8 C:\xampp\htdocs\staging\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#9 C:\xampp\htdocs\staging\wp-includes\update.php(256): do_action('wp_maybe_auto_u...')
+#10 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(303): wp_version_check()
+#11 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters('', Array)
+#12 C:\xampp\htdocs\staging\wp-includes\plugin.php(518): WP_Hook->do_action(Array)
+#13 C:\xampp\htdocs\staging\wp-cron.php(138): do_action_ref_array('wp_version_chec...', Array)
+#14 {main}
+  thrown in C:\xampp\htdocs\staging\wp-content\plugins\js_composer\include\classes\updaters\class-vc-updating-manager.php on line 100
+
+2021-08-13T04:41:26+00:00 CRITICAL Uncaught Error: Attempt to assign property "translations" on null in C:\xampp\htdocs\staging\wp-content\plugins\woocommerce\includes\admin\helper\class-wc-helper-updater.php:81
+Stack trace:
+#0 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(305): WC_Helper_Updater::transient_update_plugins(NULL)
+#1 C:\xampp\htdocs\staging\wp-includes\plugin.php(189): WP_Hook->apply_filters(NULL, Array)
+#2 C:\xampp\htdocs\staging\wp-includes\option.php(1977): apply_filters('pre_set_site_tr...', Object(stdClass), 'update_plugins')
+#3 C:\xampp\htdocs\staging\wp-includes\update.php(357): set_site_transient('update_plugins', Object(stdClass))
+#4 C:\xampp\htdocs\staging\wp-includes\update.php(899): wp_update_plugins()
+#5 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(303): _maybe_update_plugins('')
+#6 C:\xampp\htdocs\staging\wp-includes\class-wp-hook.php(327): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\staging\wp-includes\plugin.php(470): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\staging\wp-admin\admin.php(175): do_action('admin_init')
+#9 C:\xampp\htdocs\staging\wp-admin\index.php(10): require_once('C:\\xampp\\htdocs...')
+#10 {main}
+  thrown in C:\xampp\htdocs\staging\wp-content\plugins\woocommerce\includes\admin\helper\class-wc-helper-updater.php on line 81
+
